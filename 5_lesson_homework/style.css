@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+}
+
+.svg__container{
+    margin: 80px 0 0 200px;
+}
+
+.laptop__animation{
+    width: 800px;
+}
+
+/* #upload{
+    animation: upload__animation 1s  linear alternate;
+} */
+
+#upload{
+    animation: laptop__animation 1s  linear;
+    animation: upload__animation 2s linear;
+
+}
+
+#strelka__left{
+    animation: strelka__left__animation 3s linear;
+}
+
+#strelka__right{
+    animation: strelka__right__animation 3s linear;
+}
+
+#phone__and__tablet {
+    animation: phone__and__tablet__animation 3s linear
+}
+
+#girl {
+    animation: girl__animation 2s linear;
+}
+
+@keyframes upload__animation {
+
+    
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 0;
+
+    }
+
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-100px);
+    }
+
+
+}
+
+@keyframes strelka__left__animation {
+
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes strelka__right__animation {
+
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes phone__and__tablet__animation {
+
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes girl__animation {
+
+    /* 0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    } */
+
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
